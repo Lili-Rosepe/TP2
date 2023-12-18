@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requins</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+
+</head>
+
+<body>
+    <!--Navigation sémantique-->
+  <header id="#acceuil">
+    <img src="images/logo.png" alt="national géographic">
+    <!--information sur la page-->
+    <p>TP2-582-1W1 – Mise en page Web - <br> Lili-Rose Perreault - <br> <!--liens github--> https://lili-rosepe.github.io/Tp2/ - <br> Technique d’Intégration Multimédia -  <br> Collège de Maisonneuve - <br> Automne 2023</p>
+      
+    
+    <nav>
+
+    
+      <!--liens-->
+      <a href="#header">Accueil</a>
+      <a href="#conteneur4">Inscription</a>
+      <a href="#conteneur1">Tableau </a>
+      <a href="#conteneur1">Articles</a>
+      <a href="#contenur1">Vidéo</a>
+      <a href="#conteneur3">Galerie</a>
+      <a href="#footer">Contacts</a>
+
+      <!--Ajout d'un espace de recherces-->
+      <h2>Recherche</h2>  
+
+      <div id="recherche">
+        <input type="text" placeholder="Rechercher" aria-label="recherche"/>
+      </div>
+
+    </nav>
+    
+
+  </header>
+    
+    <!--conteneur principal-->
+  <div id="global">
+     
+   
+        <!--conteneur colonne de gauche-->
+        <figure id="conteneur1">
+           <!--images de requins-->
+          <img src="images/blacktip.webp" alt="blacktip">
+          <img src="images/requinstigre.jpg" alt="tigre">
+          <img src="images/scale.png" alt="scale">
+
+
+        </figure>
+      <!--colonne centrale-->
+      <section id="#conteneur2">
+
+        <!--titre semantique-->
+        <h1>Les Requins</h1>
+
+        <!--Texte d'informations et sous-titres-->
+        <h2>Informations générales</h2>
+        <P>Les requins sont des animaux marins qui sont principalement carnivores avec quelques exception comme le requin baleine. Par ailleurs, il existe près de 500 espèces différentes dont la taille peut varier de 17 centimètres jusqu'à 20 mètres. Les requins sont tellement fascinant que dans de rare cas certaines femelles n'ont pas besoin de partenaire pour faire de nouveaux requins.  </P>
+
+         <!--Tableau-->
+        <h2>Tableau des différentes caractéristiques selon l'espèce</h2>
+
+        <table>
+          <tr>
+            <th>Espèces</th>
+            <th>Taille</th>
+            <th>Poids</th>
+            <th>Longévité</th>
+            
+            
+          </tr>
+          <tr>
+            <td>Requin à pointe noire</td>
+            <td>1,50m</td>
+            <td>45kg</td>
+            <td>12 ans</td>
+            
+          </tr>
+
+          <tr>
+            <td>Requin tigre</td>
+            <td>4,25m</td>
+            <td>480kg</td>
+            <td>27 ans</td>
+          </tr>
+
+          <tr>
+            <td>Grand requin blanc</td>
+            <td>8m</td>
+            <td>1,100 kg</td>
+            <td>70 ans</td>
+          </tr>
+
+          <tr>
+            <td>Requin marteau</td>
+            <td>3,5m</td>
+            <td>100kg</td>
+            <td>30 ans</td>
+          </tr>
+
+        </table>
+        <!--Vidéo youtube explicatives-->
+        <h2>Vidéo explicative:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tfWMwG6aYzQ?si=-fB7NPfgWYfuktl6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h2>Représentation dans les médias</h2>
+
+        <p> Malgré la beauté du requin, il est souvent représenté comme un animal dangereux qui attaque la première personne qu'il voit. Ce qui n'a pas aidé à lui donner une bonne image ce sont les médias. Par exemple, le film les dents de la mer ("Jaws") a grandement contribué à l'origine de leur mauvaise réputation auprès du grand public. Après, plusieurs films ont continué dans cette lancé comme: instinct de survie, 47 mètres plus bas, The reef etc.  </p>
+    
+
+      </section>
+
+      <!--colonne de gauche--> 
+      <figure id="conteneur3">
+
+            <!--images de requins-->
+            <img src="images/hammershark.jpg" alt="mar  u">
+            <img src="images/whiteshark.jpg" alt="blanc">
+            <img src="images/jaws-poster.jpg" alt="jaws">
+
+
+      </figure>
+
+
+    </div>
+
+ 
+      <div id="conteneur4">
+
+        <!--Formulaires-->
+        <form action="traiter_form.php">  
+          <!--Titre -->
+        <caption>Laissez nous savoir votre opinion:</caption>    
+        <fieldset>    
+          <!--Nom prénom--> 
+            <label for="nom">Nom:</label>        
+            <input type="text" id="nom" name="nom"><br>        
+            <label for="prenom">Prenom:</label>         
+            <input type="text" id="prenom" name="prenom"><br> 
+            <!--Opinion-->
+            <p>À quel point cette page était utile:</p>
+            <input type="radio" id="opinion" name="opinion" value="utile">
+            <label for="opinion">Très utile</label> <br>
+            <input type="radio" id="opinion" name="opinion" value="utile">
+            <label for="opinion">Utile</label> <br>
+            <input type="radio" id="opinion" name="opinion" value="neutre">
+            <label for="opinion">Neutre</label> <br>
+            <input type="radio" id="opinion" name="opinion" value="pas utile">
+            <label for="opinion">Pas utile</label> 
+            <!--Boite de texte pour les commentaires-->
+            <p>Commentaires?</p>   
+            <textarea id="zone_texte" name="fortnite" rows="10" cols="30"></textarea><br>
+            <input id="bouton_submit" type="submit" value="Soumettre">
+            <input type="reset" value="Annuler"> 
+        </fieldset>
+        </form>  
+
+       </div>
+     
+
+     
+      <!--pied de page-->
+    <footer>
+      
+      <!--Adresse du collège -->
+      <h2>Mon collège:</h2>    
+      <iframe src="https://www.cmaisonneuve.qc.ca/?accueil" frameborder="0"></iframe> 
+
+      <!--Référence d'informations -->
+      <p> https://fr.wikipedia.org/wiki/Requin_%C3%A0_pointes_noires </p>
+
+      <p> https://www.anigaido.com/animaux/poissons-cartilagineux?origine=0&keyword=&order=alphabetique&top=0 </p>
+
+      <p> https://www.techno-science.net/glossaire-definition/Confrontation-a-la-realite-de-l-image-du-requin-tueur-des-Dents-de-la-mer.html </p> 
+
+      <p> &copy; 2023 Lili-Rose Perreault. Tous droits réservés.</p>
+      <p>Politique de confidentialité</p>
+
+      <!--Ajout des icones pour les résaux sociaux-->  
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+         
+         
+
+    </footer>
+
+    <!--Iconnes -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+  
+  </div>
+
+
+</body>
+</html>
